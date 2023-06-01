@@ -172,10 +172,12 @@ function cutString(str){
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function giveMeRandom(n1){
-
-     n1 = Math.floor(Math.random()*10)
- 
-    return  n1
+    let random = []
+    for(let i=0; i<n1; i++){
+        random.push (Math.random()*10)
+    }
+  
+     return  random
 
 }
 console.log(giveMeRandom())
